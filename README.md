@@ -12,8 +12,8 @@
 
 ## Running
 1. Open terminal and run AppIconInstaller.sh 
-    - If you are unsure how to run it type "sh " then drag AppIconInstaller.sh onto the terminal line, this will automatically input the path name.
-    - It should look like ``` sh PATH/AppIconInstaller.sh```
+    - If you are unsure how to run it type "cd " then drag folder containing AppIconInstaller.sh onto the terminal line, this will automatically input the path name.
+    - Then once your directory has been changed, run ``` sh AppIconInstaller.sh```
 2. Type in your password when prompted
 
 ## Reverting
