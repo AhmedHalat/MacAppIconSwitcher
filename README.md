@@ -3,9 +3,11 @@
  
  ## TODO
  - Create a script to revert images to backup
+ - Make it so that the names of the icons don't have to be exactly the same as the app
 
 ## Preparation
 - Place AppIconInstaller.sh inside the folder with your app icons
+- The names of the icons must be exactly the same as the app in this initial version
 - Don't worry about the backup folder, if one doesn't exist, it will be created
 
 ## Running
