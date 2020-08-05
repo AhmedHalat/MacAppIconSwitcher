@@ -22,7 +22,11 @@ ls *.icns | while read newIcn; do
 
   icn=`defaults read "$systemApp"/Applications/"$appName".app/Contents/info CFBundleIconFile`
 
-  sudo mv "$systemApp"/Applications/"$appName".app/Contents/Resources/"$icn" "$backupFolder"
+  if [[ ! -e "$backupFolder"/"$newIcn"]]; then
+    sudo mv "$systemApp"/Applications/"$appName".app/Contents/Resources/"$icn" "$backupFolder"/"$newIcn"
+  else
+    echo "Backup icon for $appName already exists"
+  fi
 
   sudo cp "$newIcn" "$systemApp"/Applications/"$appName".app/Contents/Resources/
   sudo mv "$systemApp"/Applications/"$appName".app/Contents/Resources/"$newIcn" "$systemApp"/Applications/"$appName".app/Contents/Resources/"$icn"
