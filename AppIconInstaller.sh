@@ -22,7 +22,7 @@ ls *.icns | while read newIcn; do
 
   icn=`defaults read "$systemApp"/Applications/"$appName".app/Contents/info CFBundleIconFile`
 
-  if [[ ! $icn == *".icn" ]]; then
+  if [[ ! $icn == *".icns" ]]; then
     icn="$icn".icns
   fi
 
