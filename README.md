@@ -11,10 +11,10 @@
 - Don't worry about the backup folder, if one doesn't exist, it will be created
 
 ## Running
-- Open terminal and change run AppIconInstaller.sh 
- - If you are unsure how to run it type "sh " then drag AppIconInstaller.sh onto the terminal line, this will automatically input the path name.
- - It should look like ``` sh PATH/AppIconInstaller.sh```
- - Type in your password when prompted
+1. Open terminal and run AppIconInstaller.sh 
+    - If you are unsure how to run it type "sh " then drag AppIconInstaller.sh onto the terminal line, this will automatically input the path name.
+    - It should look like ``` sh PATH/AppIconInstaller.sh```
+2. Type in your password when prompted
 
 ## Reverting
 - To undo the action and return the images to their originals, just move AppIconInstaller.sh into the backup folder and re-run the script
