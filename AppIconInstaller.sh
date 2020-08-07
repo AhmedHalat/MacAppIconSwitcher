@@ -14,7 +14,7 @@ ls *.icns | while read newIcn; do
   systemApp=""
 
   if [[ -d "/System/Applications/"$appName".app/Contents" ]]; then
-    systemApp="/System/"
+    systemApp="/System"
   elif [[ ! -d "/Applications/"$appName".app/Contents" ]]; then
     echo Skipped $appName because icon not found
     continue
