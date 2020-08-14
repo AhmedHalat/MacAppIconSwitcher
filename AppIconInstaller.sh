@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 backupFolder="./backup/" # Change this path to choose your own backup location
+echo This tool isn't able to change system app icons
 echo Make sure app icons have the same name as the application you\'re trying to replace
-echo You have to restart applications inside your doc to see updates
+echo You have to restart applications inside your dock to see updates
 
 
 if [[ ! -d $backupFolder ]]; then
