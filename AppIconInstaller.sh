@@ -7,7 +7,7 @@ echo You have to restart applications inside your dock to see updates
 
 
 if [[ ! -d $backupFolder ]]; then
-  mkdir "$backupFolder"
+  mkdir -p "$backupFolder"
 fi
 
 ls *.icns | while read newIcn; do
